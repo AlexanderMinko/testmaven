@@ -10,12 +10,18 @@
     </parent>
     <groupId>com.mavendemo</groupId>
     <artifactId>springpackage</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.1</version>
     <name>springpackage</name>
     <description>springpackage</description>
     <properties>
         <java.version>11</java.version>
     </properties>
+
+    <scm>
+        <connection>scm:git:git://github.com/AlexanderMinko/testmaven</connection>
+        <developerConnection>scm:git:git@github.com:AlexanderMinko/testmaven.git</developerConnection>
+        <url>https://github.com/AlexanderMinko/testmaven</url>
+    </scm>
 
     <distributionManagement>
         <repository>
