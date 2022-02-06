@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.mavendemo</groupId>
     <artifactId>springpackage</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <name>springpackage</name>
     <description>springpackage</description>
     <properties>
@@ -18,12 +18,17 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git://github.com/AlexanderMinko/testmaven</connection>
-        <developerConnection>scm:git:git@github.com:AlexanderMinko/testmaven.git</developerConnection>
+        <connection>scm:git:ssh://git@github.com/AlexanderMinko/testmaven.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/AlexanderMinko/testmaven.git</developerConnection>
         <url>https://github.com/AlexanderMinko/testmaven</url>
     </scm>
 
     <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>artifactory-snapshots</name>
+            <url>https://maven.pkg.github.com/AlexanderMinko/testmaven</url>
+        </snapshotRepository>
         <repository>
             <id>github</id>
             <name>GitHub OWNER Apache Maven Packages</name>
